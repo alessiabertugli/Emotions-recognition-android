@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/imageView_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false" />
+
+
+    <TableLayout
+        android:id="@+id/Predictions"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/happy_em"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:contentDescription="happy_em"
+                android:fontFamily="cursive"
+                android:text="Happy"
+                android:textAlignment="center"
+                android:textColor="#30DAC5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <ProgressBar
+                android:id="@+id/progressBar5"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="@android:integer/status_bar_notification_info_maxnum"
+                android:progress="@android:integer/config_mediumAnimTime"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/angry_em"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:contentDescription="angry_em"
+                android:fontFamily="cursive"
+                android:text="Angry"
+                android:textAlignment="center"
+                android:textColor="#30DAC5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <ProgressBar
+                android:id="@+id/progressBar6"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="@android:integer/status_bar_notification_info_maxnum"
+                android:progress="@android:integer/config_mediumAnimTime"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/disgust_em"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="disgust_em"
+                android:fontFamily="cursive"
+                android:text="Disgust"
+                android:textAlignment="center"
+                android:textColor="#30DAC5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <ProgressBar
+                android:id="@+id/progressBar7"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="@android:integer/status_bar_notification_info_maxnum"
+                android:progress="@android:integer/config_mediumAnimTime"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sad_em"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="sad_em"
+                android:fontFamily="cursive"
+                android:text="Sad"
+                android:textAlignment="center"
+                android:textColor="#30DAC5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <ProgressBar
+                android:id="@+id/progressBar8"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="@android:integer/status_bar_notification_info_maxnum"
+                android:progress="@android:integer/config_mediumAnimTime"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/surprised_em"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="surprised_em"
+                android:fontFamily="cursive"
+                android:text="Surprised"
+                android:textAlignment="center"
+                android:textColor="#30DAC5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <ProgressBar
+                android:id="@+id/progressBar9"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="@android:integer/status_bar_notification_info_maxnum"
+                android:progress="@android:integer/config_mediumAnimTime"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/netural_em"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="neutral_em"
+                android:fontFamily="cursive"
+                android:text="Neutral"
+                android:textAlignment="center"
+                android:textColor="#30DAC5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <ProgressBar
+                android:id="@+id/progressBar10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="@android:integer/status_bar_notification_info_maxnum"
+                android:progress="@android:integer/config_mediumAnimTime"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fear_em"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="fear_em"
+                android:fontFamily="cursive"
+                android:text="Fear"
+                android:textAlignment="center"
+                android:textColor="#30DAC5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <ProgressBar
+                android:id="@+id/progressBar11"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="@android:integer/status_bar_notification_info_maxnum"
+                android:progress="@android:integer/config_mediumAnimTime"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

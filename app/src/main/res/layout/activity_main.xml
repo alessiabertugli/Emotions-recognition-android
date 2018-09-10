@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:orientation="vertical"
+        app:layout_anchorGravity="top|center_horizontal|top|center_horizontal">
+
+        <Button
+            android:id="@+id/Model3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_title"
+            android:elevation="10dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="cursive"
+            android:lineSpacingExtra="14sp"
+            android:text="Naive Bayes Model"
+            android:textColor="@color/primaryLightColor"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/Model2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_title"
+            android:elevation="10dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="cursive"
+            android:lineSpacingExtra="14sp"
+            android:text="SGD Model"
+            android:textColor="@color/primaryLightColor"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/Model1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_title"
+            android:elevation="10dp"
+            android:fontFamily="cursive"
+            android:lineSpacingExtra="14sp"
+            android:text="Logistic model"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/primaryLightColor"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/TFModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_title"
+            android:elevation="10dp"
+            android:fontFamily="cursive"
+            android:text="Cnn model"
+            android:textColor="@color/orange_button"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:expanded="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#6200EE"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_round_insert_photo_24px"
+        android:tint="@color/grey_title"
+        app:backgroundTint="#30DAC5"
+        app:elevation="10dp"
+        app:rippleColor="@color/grey_title" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_cam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_camera_alt_black_36dp"
+        android:tint="@color/grey_title"
+        app:backgroundTint="#30DAC5"
+        app:elevation="10dp"
+        app:rippleColor="@color/grey_title" />
+
+</android.support.design.widget.CoordinatorLayout>
+
